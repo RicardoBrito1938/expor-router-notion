@@ -3,7 +3,7 @@ import { PageList } from "@/components/page-list";
 import { RecentList } from "@/components/recent-list";
 import { DATA } from "@/utils/data";
 import { ScrollView, Alert, View } from "react-native";
-import { Button } from "@sf-digital-ui/react-native";
+import { Button, Heading } from "@sf-digital-ui/react-native";
 
 export default function Index() {
   const createTwoButtonAlert = () =>
@@ -20,6 +20,7 @@ export default function Index() {
     <View style={{ flex: 1, paddingTop: 32 }}>
       <Header />
       <Button title="Click me" onPress={createTwoButtonAlert} />
+      <Heading variant="h1">Recent</Heading>
       <ScrollView
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{
